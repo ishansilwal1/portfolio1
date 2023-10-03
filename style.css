@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    font-family: cursive;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+  
+body{
+    background-color: rgb(15, 14, 14);
+}
+/* Header and navbar section*/
+header{
+    height: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    
+}
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(21, 19, 19);
+    border-radius: 10px;
+    display: inline flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+
+}
+.nav-logo{
+    height: 100%;
+    width:10%;
+    font-size: 18px;
+
+}
+.ishan{
+    color: rgb(255, 145, 0);
+    padding-left: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+.links ul li{
+    list-style:none;
+    float: left;
+    padding: 30px;
+    font-size: 22px;
+}
+.links ul li a{
+    text-decoration:none;
+    color: white;
+}
+.links ul li a:hover{
+    color:rgb(255, 145, 0);
+    border-bottom: 1px solid red;
+}
+
+/* hero section*/
+.hero{
+    margin-top: 120px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.main{
+    width: 100%;
+    height:450px;
+    background-color: rgb(21, 19, 19);
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+.hero_left{
+    width:50%;
+    height: 200px;
+    color:white;
+    padding-left: 20px;
+    padding-top:100px;
+    margin-left: 30px;
+
+}
+.intro{
+    color:white;
+    font-size: 40px;
+    font-family: cursive;
+}
+.check{
+    color:rgb(255, 145, 0);
+    font-family: cursive;
+    font-size: 40px;
+}
+
+
+/* typing effect*/
+.container
+{
+    margin-top:10px;
+    height:50px;
+    width:400px;
+    
+}
+.static{
+    color:white;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: cursive;
+}
+.dynamic{
+    color:red;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: cursive;
+    margin-left: 10px;
+}
+.hire_me{
+    width:200px;
+    height:100px;
+    margin-top:40px;
+}
+.hire_me button{
+    height:50px;
+    width:200px;
+    border:1px solid white;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: cursive;
+    font-weight: 800;
+    font-size: larger;
+    color:white;
+    background:transparent ;
+}
+.hire_me button:hover{
+    border: none;
+    background-color:rgb(255, 145, 0);
+}
+/* left div*/
+.hero_right{
+    margin-top:20px;
+    height: 400px;
+    width: 350px;
+    margin-right: 35px;
+    border-radius: 30%;
+    background: dimgray;
+    background-image: url(man.png);
+    background-size:cover;
+    background-position: left;
+}
+
+/*About me section*/
+.aboutme{
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.wrap{
+    width: 100%;
+    height:450px;
+    background-color: rgb(21, 19, 19);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.about_left h1{
+    color:rgb(255, 145, 0);
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.about_left{
+    width:600px;
+    height:450px;
+    text-align: justify;
+    padding-left:40px;
+    padding-top:30px;
+    color: white;
+    font-size: 20px;
+
+}
+.about_left p{
+    letter-spacing: 1px;
+}
+
+.about_right {
+    background-image: url(checl.jpg);
+    margin-top:20px;
+    height: 400px;
+    width: 500px;
+    margin-right: 35px;
+    border-radius: 10%;
+    background-size:cover;
+    background-position: right;
+}
+
+/*Education*/
+.education{
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+.edu{
+    width: 100%;
+    height:500px;
+    background-color: rgb(21, 19, 19);
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.edu h1{
+    color: rgb(255, 145, 0);
+    font-size: 40px;
+    text-align: center;
+}
+/*Timeline check*/
+.timeline {
+    color:white;
+   width: 1500px;
+    height: 400px;
+    padding: 50px;
+    position:absolute;
+    box-sizing: border-box;
+    background:  rgb(21, 19, 19);
+    overflow: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  .timieline-title {
+    font-size: 1.5em;
+    font-weight: bold; 
+  }
+  .timeline-content {
+    max-width: 300px;
+    height: 200px;
+    padding: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-self: flex-start;
+    background: rgb(255, 145, 0);
+    position: relative;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0, 0.2);
+  }
+  .timeline-content:before {
+    position: absolute;
+    width: calc(100% + 14px);
+    height: 4px;
+    top: calc(100% + 10px);
+    background: rgb(255, 145, 0);
+    content: "";
+    left: -7px;
+    border-radius: 5px;
+  }
+  
+  .timeline-content:after {
+    position: absolute;
+    width: 4px;
+    height: 25px;
+    top: 100%;
+    left: calc(50% - 10px);
+    background:rgb(255, 145, 0);
+    content: "";
+  }
+  .timeline-period {
+    position: absolute;
+    top: calc(100% + 25px);
+    background: rgb(255, 145, 0);
+    padding: 10px;
+    width: 100px;
+    text-align:center;
+    border-radius: 10px;
+    left: calc(50% - 60px);
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0, 0.2);
+  }
+  .timeline-period:before {
+    width: 15px;
+    height: 15px;
+    background: rgb(255, 145, 0);
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 6px);
+    z-index: 2;
+  }
+  
+  .timeline-content:nth-child(even) {
+    align-self: flex-end;
+  }
+  .timeline-content:nth-child(even):before {
+      top: -15px; 
+  }
+  .timeline-content:nth-child(even):after {
+      top: -25px;
+  }
+  .timeline-content:nth-child(even) .timeline-period {
+    top: -60px;
+  }
+  .timeline-content:nth-child(even) .timeline-period:before {
+    top: calc(100% + 2px);
+  }
+  /*Timeline over*/
+
+  /* Services section*/
+  .skills{
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.skillcontain{
+    width: 100%;
+    height:600px;
+    background-color: rgb(21, 19, 19);
+    border-radius: 10px;
+    text-align: center;
+}
+.skillcontain span{
+    color:white;
+    font-size: 60px;
+}
+.skillcontain h1 {
+    color:rgb(255, 145, 0);
+    font-size: 60px;
+}
+.skillbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:  center;
+    margin-top: 80px;
+    min-height: 400px;
+}
+.skill1{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background-color:rgba(0,0,0, 0.2);
+    border-radius: 20px ;
+    border: 2px solid rgb(255, 145, 0);
+}
+.skill1 i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: rgb(255, 145, 0);
+}
+h5{
+    color: white;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.skilltext p{
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;    
+}
+.hire_{
+    width:100px;
+    height:1000px;
+    margin-top:10px;
+    margin-left: 70px;
+
+}
+.hire_ button{
+    height:50px;
+    width:150px;
+    border:1px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: cursive;
+    font-weight: 800;
+    font-size: larger;
+    color:white;
+    background:transparent ;
+    align-items: center;
+}
+.hire_ button:hover{
+    border: none;
+    background-color:rgb(255, 145, 0);
+}
+ /*services section Over*/
+
+/*Projects section*/
+.projects{
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.projectcontain{
+    width: 100%;
+    height:600px;
+    background-color: rgb(21, 19, 19);
+    border-radius: 10px;
+    text-align: center;
+}
+.projectcontain span{
+    color:white;
+    font-size: 60px;
+}
+.projectcontain h1 {
+    color:rgb(255, 145, 0);
+    font-size: 60px;
+}
+.myworks{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.myworks a{
+    width: 400px;
+    height: 350px;
+    background-color: red;
+    margin-top: 100px;
+}
+.prj1{
+    width: 100%;
+    height: 100%;
+    background: url(netflix.jpg);
+    background-size: contain;
+}
+.prj2{
+    width: 100%;
+    height: 100%;
+    background: url(crud.jpg);
+    background-size: contain;
+}
+.prj3{
+    width: 100%;
+    height: 100%;
+    background: url(college.jpg);
+    background-size: contain;
+}
+/*project session ends here */
+
+/* Contact me section starts here */
+.contact{
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.contact-form{
+    width: 100%;
+    height:600px;
+    background-color: rgb(21, 19, 19);
+    border-radius: 10px;
+    text-align: center;
+}
+.contact-form span{
+    color:rgb(255, 145, 0);
+    font-size: 60px;
+    padding: 20px;
+}
+.contact-form h1 {
+    color:white;
+    font-size: 60px;
+}
+
+.contactdiv{
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+    width: 100%;
+    margin-top: 50px;
+}
+.contact-right{
+    width: 50%;
+    height: 100%;
+    border: 1px solid rgb(255, 145, 0);
+}
+
+.contact-left{
+    width: 50%;
+    height: 100%;
+}
+/* Contact me section*/
